@@ -1,8 +1,6 @@
 # url: https://github.com/marketplace/actions/okteto-login
 # File: .github/workflows/workflow.yml
-
-on:
-  - push
+on: [push]
 name: example
 jobs:
   devflow:
@@ -14,4 +12,4 @@ jobs:
       - uses: okteto/namespace@latest
         with:
           name: mytest_picarenlamina
-     
+      - uses: okteto/build@latest
