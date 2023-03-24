@@ -19,5 +19,5 @@ jobs:
       with:
         name: mytest_picarenlamina
     
-    - name: "Build"
-      uses: okteto/build@latest
+   
+    - uses: okteto/build@latest
