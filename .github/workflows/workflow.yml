@@ -1,23 +1,17 @@
 # url: https://github.com/marketplace/actions/okteto-login
 # File: .github/workflows/workflow.yml
 
-on: [push]
-
+on:
+  - push
 name: example
-
 jobs:
-
   devflow:
     runs-on: ubuntu-latest
     steps:
-    
-    - uses: okteto/login@latest
-      with:
-        token: ${{ secrets.OKTETO_TOKEN }}
-    
-    - uses: okteto/namespace@latest
-      with:
-        name: mytest_picarenlamina
-    
-   
-    - uses: okteto/build@latest
+      - uses: okteto/login@latest
+        with:
+          token: ${{ secrets.OKTETO_TOKEN }}
+      - uses: okteto/namespace@latest
+        with:
+          name: mytest_picarenlamina
+      - uses: okteto/build@latest
