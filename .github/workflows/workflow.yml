@@ -14,4 +14,4 @@ jobs:
       - uses: okteto/namespace@latest
         with:
           name: mytest_picarenlamina
-      - uses: okteto/build@latest
+     
